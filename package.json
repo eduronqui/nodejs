@@ -8,6 +8,10 @@
   },
   "author": "Edu Ronqui <edu.ronqui@gmail.com>",
   "license": "MIT",
+  "repository" : {
+	"type" : "git",
+	"url" : "https://github.com/eduronqui/nodejs.git"
+  },
   "dependencies": {
     "express": "^4.13.3"
   },
