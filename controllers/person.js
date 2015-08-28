@@ -1,16 +1,16 @@
-var PersonModel = require('../models/person');
+var Person = require('../models/person');
 
 module.exports = {
 		
 	getById: function (req, res) {
 		
-		var d = new PersonModel(req.params.id);
+		var person = new Person(req.params.id);
 		
-		res.send(d.toJson());
+		res.send(person.toJsonString());
 	},
 	
 	toBeTested: function (id) {
-		var person = new PersonModel(id);
+		var person = new Person(id);
 		return person;	
 	}
 };
