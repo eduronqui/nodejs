@@ -8,14 +8,14 @@ module.exports = function (assert) {
 
 			it('Should pass', function () {
 				var resp = personController.toBeTested(20);
-				assert.typeOf(resp.ID,'number');
-				assert.equal(20, resp.ID);
+				assert.typeOf(resp.Id,'number');
+				assert.equal(20, resp.Id);
 			});
 
 			it('Should fail', function () {
 				var resp = personController.toBeTested(20);
-				assert.typeOf(resp.ID,'number');
-				assert.equal(2, resp.ID);
+				assert.typeOf(resp.Id,'number');
+				assert.equal(2, resp.Id);
 			});
 		});
 	});
