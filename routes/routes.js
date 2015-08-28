@@ -1,5 +1,5 @@
 module.exports = function (app) {
-
-	var personController = require('../controllers/person');
-	app.get('/person/:id', personController.getById);
+	
+	var PersonController = require('../controllers/person');
+	app.get('/person/:id', PersonController.getById);
 };
